@@ -59,18 +59,17 @@ paginate_path: 'page:num'
 menus:
 
   -
-    href: /
-    label: Item1
-    target: _blank  
+    href: /about.html
+    label: about
 
   -
-    href: /
-    label: Item2
+    href: /archives.html
+    label: archives
     target: _self   
 
   -
-    href: /
-    label: Item3
+    href: /arch.html
+    label: arch
     target: _self
 
   -
@@ -149,7 +148,7 @@ classes:
 
   -
     href: /about.html
-    name: Article1
+    name: about
 
   -
     href: /archives.html
@@ -158,7 +157,7 @@ classes:
 
   -
     href: /arch.html
-    name: 支持中文
+    name: arch
     describe: 支持中文
 
 # ---------------- #
