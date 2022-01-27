@@ -9,3 +9,6 @@
 样例展示：
 - [http://www.ityouknow.com/](http://www.ityouknow.com/)
 - [https://xinlong-wu.github.io/XinlongWu.github.io/](https://xinlong-wu.github.io/XinlongWu.github.io/)
+
+使用教程：
+ - https://www.zhihu.com/question/20223939/answer/604512125
