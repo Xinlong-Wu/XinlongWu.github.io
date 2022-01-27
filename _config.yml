@@ -148,16 +148,16 @@ labels:
 classes:
 
   -
-    href: /
+    href: /about.html
     name: Article1
 
   -
-    href: /
-    name: Article2
+    href: /archives.html
+    name: archives
     describe: describe
 
   -
-    href: /
+    href: /arch.html
     name: 支持中文
     describe: 支持中文
 
