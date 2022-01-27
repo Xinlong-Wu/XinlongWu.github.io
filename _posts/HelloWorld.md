@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Hello Word!
-category: unknown
-tags: [unknown]
+category: Templet
+tags: [Templet]
 excerpt: Thanks!
 ---
 
