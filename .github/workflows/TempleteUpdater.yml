@@ -17,10 +17,10 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Fetch from GitHub
-      run: git clone -b main https://github.com/Xinlong-Wu/XinlongWu.github.io.git ; cd XinlongWu.github.io
+      run: ls -l ; git clone -b main https://github.com/Xinlong-Wu/XinlongWu.github.io.git ; cd XinlongWu.github.io
     
     - name: Try rebase
-      run: pwd ; git pull --rebase origin templete
+      run: pwd ; ls -l;  git pull --rebase origin templete
       
     - name: Force push
       run: git push --force origin main:main
