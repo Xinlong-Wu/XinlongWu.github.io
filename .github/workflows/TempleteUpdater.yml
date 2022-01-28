@@ -3,8 +3,7 @@
 name: Templete Updater
 
 on:
-  push:
-    branches: [ templete ]
+  workflow_call
 
 jobs:
   build:

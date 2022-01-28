@@ -15,5 +15,7 @@ jobs:
     - uses: jerryjvl/jekyll-build-action@v1
       name: Build Jekyll
       
-    - name: Done
-      run: |
+  Push_to_Blog:
+    needs: [ build ]
+    uses: ./.github/workflows/TempleteUpdater.yml
+    name: Push to Blog
