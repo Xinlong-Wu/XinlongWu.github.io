@@ -15,16 +15,16 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: templete
-      - name: Cache Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-          ruby-version : 3.0.3
-      - name: Jekyll build check
-        uses: helaili/jekyll-action@2.2.0
-        with:
-          build_only: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+#       - name: Cache Ruby
+#         uses: ruby/setup-ruby@v1
+#         with:
+#           bundler-cache: true
+#           ruby-version : 3.0.3
+#       - name: Jekyll build check
+#         uses: helaili/jekyll-action@2.2.0
+#         with:
+#           build_only: true
+#           token: ${{ secrets.GITHUB_TOKEN }}
       
   Push_to_Blog:
     needs: [ build ]
