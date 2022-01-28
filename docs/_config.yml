@@ -219,7 +219,7 @@ gitment:
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: Xinlong-Wu
-    repo: blog-comment
+    repo: XinlongWu.github.io
     clientID: c596b143ef1b081c1bda
     clientSecret: 7519cc6acf1c843c8ac8e0bbcf9d05a72a9e111d
 # 在使用其它评论组件时可点击显示 Disqus
