@@ -1,10 +1,10 @@
-name: Jekyll Templete CI
+name: Jekyll CI Pre-merge check
 
 on:
   push:
     branches: [ templete ]
   pull_request:
-    branches: [ templete ]
+    branches: [ templete, main ]
 
 jobs:
   build:
