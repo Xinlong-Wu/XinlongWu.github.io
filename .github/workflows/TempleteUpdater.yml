@@ -20,7 +20,7 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git checkout origin/main
         git switch -c main
-        git pull --rebase templete main:main
+        git pull --rebase origin templete
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
