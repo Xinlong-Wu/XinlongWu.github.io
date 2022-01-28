@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: jerryjvl/jekyll-build-action@v1
-    - name: Build the site in the jekyll/builder container
+    - uses: helaili/jekyll-action@2.2.0
+    - name: Jekyll Actions
