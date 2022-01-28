@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: helaili/jekyll-action@2.2.0
-      name: Jekyll Actions
+    - uses: jerryjvl/jekyll-build-action@v1
+      name: Build Jekyll
       
-    - name: Sync output to S3
+    - name: Done
       run: |
