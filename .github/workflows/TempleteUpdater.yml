@@ -6,23 +6,23 @@ on:
   push:
     branches: [ templete ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "greet"
-  update:
-    # The type of runner that the job will run on
+  build:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
-    - name: Fetch from GitHub
-      run: pwd ; git clone -b main https://github.com/Xinlong-Wu/XinlongWu.github.io.git
-    
-    - name: Try rebase
-      run: cd XinlongWu.github.io ; pwd ; ls -l;  git pull --rebase origin templete
-      
-    - name: Force push
-      run: git push --force origin main:main
-
-    
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+        fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
+    - name: Fech and Try rebase
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git checkout origin/main
+        git pull --rebase templete main:main
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
+        force: true
