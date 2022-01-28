@@ -12,11 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: templete
     - name: Build Jekyll
       uses: helaili/jekyll-action@2.2.0
       with: 
         build_only: true
-        ACTIONS_STEP_DEBUG : true
         token: ${{ secrets.GITHUB_TOKEN }}
       
       
