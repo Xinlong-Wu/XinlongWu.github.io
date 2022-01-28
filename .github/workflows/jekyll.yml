@@ -20,6 +20,7 @@ jobs:
       with: 
         build_only: true
         token: ${{ secrets.GITHUB_TOKEN }}
+        pre_build_commands: "bundle update --bundler"
       
       
   Push_to_Blog:
