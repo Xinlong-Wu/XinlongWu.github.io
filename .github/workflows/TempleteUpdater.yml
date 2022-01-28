@@ -19,6 +19,7 @@ jobs:
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git checkout origin/main
+        git switch -c main
         git pull --rebase templete main:main
     - name: Push changes
       uses: ad-m/github-push-action@master
