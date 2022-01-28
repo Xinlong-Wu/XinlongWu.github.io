@@ -16,5 +16,6 @@ jobs:
       name: Build Jekyll
       
   Push_to_Blog:
+    needs: [ build ]
     uses: ./.github/workflows/TempleteUpdater.yml
     name: Push to Blog
