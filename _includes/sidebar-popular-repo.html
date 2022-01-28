@@ -60,7 +60,7 @@
 
 {% for repo in sorted_repos %}
     {% if (Github_info.side_bar_repo_white_list | find_exp:"item","item == repo.name") == nil %}
-        {% if increment repo_counter < site.side_bar_repo_limit %} {% break %} {% endif %}
+        {% if increment repo_counter >= site.side_bar_repo_limit %} {% break %} {% endif %}
         <div class="card text-center">
             <div class="thumbnail">
                 <div class="card-image geopattern" data-pattern-id="{{ repo.name }}">
