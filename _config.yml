@@ -16,9 +16,19 @@ encoding: "utf-8"
 favicon: favicon.ico 
 
 repository: Xinlong-Wu/XinlongWu.github.io
-github_url: https://github.com/Xinlong-Wu/
 base_url: https://xinlong-wu.github.io/XinlongWu.github.io/
 enforce_ssl: xinlong-wu.github.io/XinlongWu.github.io/
+
+# Sidebar to show popular repo
+Github_info:
+  github_url: https://github.com/Xinlong-Wu/
+  side_bar_repo_limit: 3 # Number of repos to show
+  side_bar_repo_black_list : [
+    "zheda_curriculum",
+    "XinlongWu.github.io",
+    "Xinlong-WU"
+  ]
+  # side_bar_repo_white_list : []
 
 filing_site: http://beian.miit.gov.cn
 filing_info: 京ICP备15067287号
@@ -164,9 +174,6 @@ classes:
 #       RSS        #
 # ---------------- #
 subscribe_rss: /feed.xml
-
-# Sidebar to show popular repo
-side_bar_repo_limit: 3 # Number of repos to show
 
 # Google Analytics
 # analytics :
