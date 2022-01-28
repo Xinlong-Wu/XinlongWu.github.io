@@ -58,10 +58,9 @@
     {% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse | where: "fork", "false" %}
 {% endif %}
 
-{% increment repo_counter %}
 {% for repo in sorted_repos %}
-    {% unless (Github_info.side_bar_repo_white_list | find_exp:"item","item contains repo.name") %}
-        {% if repo_counter < site.side_bar_repo_limit %} {% break %} {% endif %}
+    {% if (Github_info.side_bar_repo_white_list | find_exp:"item","item == repo.name") == nil %}
+        {% if increment repo_counter < site.side_bar_repo_limit %} {% break %} {% endif %}
         <div class="card text-center">
             <div class="thumbnail">
                 <div class="card-image geopattern" data-pattern-id="{{ repo.name }}">
