@@ -18,7 +18,7 @@ jobs:
       - name: Jekyll build check
         uses: helaili/jekyll-action@2.2.0
         with:
-          debug_only: true
+          build_only: true
           token: ${{ secrets.GITHUB_TOKEN }}
       
   Push_to_Blog:
