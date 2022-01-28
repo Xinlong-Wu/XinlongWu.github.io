@@ -57,10 +57,10 @@
 {% else %}
     {% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse | where: "fork", "false" %}
 {% endif %}
-
+{% assign repo_counter = 0 %}
 {% for repo in sorted_repos %}
 
-        {% if increment repo_counter >= site.side_bar_repo_limit %} {% break %} {% endif %}
+        {% if (repo_counter | plus 1) > site.side_bar_repo_limit %} {% break %} {% endif %}
         <div class="card text-center">
             <div class="thumbnail">
                 <div class="card-image geopattern" data-pattern-id="{{ repo.name }}">
