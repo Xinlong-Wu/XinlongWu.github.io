@@ -17,8 +17,9 @@ jobs:
           ref: templete
       - name: Jekyll build check
         uses: helaili/jekyll-action@2.2.0
-        token: ${{ secrets.GITHUB_TOKEN }}
-        build_only: true
+        with:
+          debug_only: true
+          token: ${{ secrets.GITHUB_TOKEN }}
       
   Push_to_Blog:
     needs: [ build ]
