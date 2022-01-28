@@ -1,0 +1,19 @@
+name: Jekyll CI for Main
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: jerryjvl/jekyll-build-action@v1
+      name: Build Jekyll
+      
+    - name: Done
+      run: |
