@@ -13,4 +13,7 @@ jobs:
 
     steps:
     - uses: helaili/jekyll-action@2.2.0
-    - name: Jekyll Actions
+      name: Jekyll Actions
+      
+    - name: Sync output to S3
+      run: |
