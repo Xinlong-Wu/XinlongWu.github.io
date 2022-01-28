@@ -12,10 +12,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: helaili/jekyll-action@2.2.0
+    - name: Build Jekyll
+      uses: helaili/jekyll-action@2.2.0
       with: 
         build_only: true
-      name: Build Jekyll
+        token: ${{ secrets.GITHUB_TOKEN }}
+      
       
   Push_to_Blog:
     needs: [ build ]
