@@ -23,12 +23,7 @@ enforce_ssl: xinlong-wu.github.io/XinlongWu.github.io/
 Github_info:
   github_url: https://github.com/Xinlong-Wu/
   side_bar_repo_limit: 3 # Number of repos to show
-  side_bar_repo_black_list : [
-    "zheda_curriculum",
-    "XinlongWu.github.io",
-    "Xinlong-WU"
-  ]
-  # side_bar_repo_white_list : []
+  # side_bar_repo_show_list : []
 
 filing_site: http://beian.miit.gov.cn
 filing_info: 京ICP备15067287号
