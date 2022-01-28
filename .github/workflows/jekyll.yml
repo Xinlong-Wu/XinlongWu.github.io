@@ -16,6 +16,7 @@ jobs:
       uses: helaili/jekyll-action@2.2.0
       with: 
         build_only: true
+        gem_src: ./
         token: ${{ secrets.GITHUB_TOKEN }}
       
       
