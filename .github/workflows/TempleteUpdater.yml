@@ -17,7 +17,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Fetch from GitHub
-      run: ls -l ; git clone -b main https://github.com/Xinlong-Wu/XinlongWu.github.io.git ; cd XinlongWu.github.io
+      run: pwd ; git clone -b main https://github.com/Xinlong-Wu/XinlongWu.github.io.git ; cd XinlongWu.github.io
     
     - name: Try rebase
       run: pwd ; ls -l;  git pull --rebase origin templete
