@@ -12,7 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: jerryjvl/jekyll-build-action@v1
+    - uses: helaili/jekyll-action@2.2.0
+      with: 
+        build_only: true
       name: Build Jekyll
       
   Push_to_Blog:
