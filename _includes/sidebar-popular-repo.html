@@ -59,7 +59,7 @@
 {% endif %}
 {% assign repo_counter = 0 %}
 {% for repo in sorted_repos %}
-    {% if repo_counter > site.Github_info.side_bar_repo_limit %} {% break %} {% endif %}
+    {% if repo_counter >= site.Github_info.side_bar_repo_limit %} {% break %} {% endif %}
     {% if site.Github_info.side_bar_repo_black_list contains repo.name %} <script>skipedReop.push({{repo | jsonify | normalize_whitespace }})</script>  {% continue %} {% endif %}
     {% assign repo_counter = repo_counter | plus: 1 %} 
             <div class="thumbnail">
