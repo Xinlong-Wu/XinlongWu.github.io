@@ -25,22 +25,22 @@ Github_info:
   github_url: https://github.com/Xinlong-Wu/
   side_bar_repo_limit: 3 # Number of repos to show
   side_bar_repo_black_list: ['test1']
-  side_bar_repo_show_list : 
-    - name: test1
-      description: for test
-      stargazers_count: 0
-      forks_count: 0
-      updated_at: 2020/1/1
-    - name: test2
-      description: for test
-      stargazers_count: 0
-      forks_count: 0
-      updated_at: 2020/1/1
-    - name: test3
-      description: for test
-      stargazers_count: 0
-      forks_count: 0
-      updated_at: 2020/1/1
+  # side_bar_repo_show_list : 
+  #   - name: test1
+  #     description: for test
+  #     stargazers_count: 0
+  #     forks_count: 0
+  #     updated_at: 2020/1/1
+  #   - name: test2
+  #     description: for test
+  #     stargazers_count: 0
+  #     forks_count: 0
+  #     updated_at: 2020/1/1
+  #   - name: test3
+  #     description: for test
+  #     stargazers_count: 0
+  #     forks_count: 0
+  #     updated_at: 2020/1/1
 
 
 filing_site: http://beian.miit.gov.cn
