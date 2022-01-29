@@ -24,7 +24,7 @@ enforce_ssl: xinlong-wu.github.io/XinlongWu.github.io/
 Github_info:
   github_url: https://github.com/Xinlong-Wu/
   side_bar_repo_limit: 3 # Number of repos to show
-  side_bar_repo_black_list: ['test1']
+  side_bar_repo_black_list: ['zheda_curriculum','XinlongWu.github.io',]
   # side_bar_repo_show_list : 
   #   - name: test1
   #     description: for test
