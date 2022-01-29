@@ -20,8 +20,8 @@ jobs:
         with:
           bundler-cache: true
           ruby-version : 3.0.3
-        run: |
-              bundle exec jekyll build
+      - run: |
+            bundle exec jekyll build
 #       - name: Jekyll build check
 #         uses: helaili/jekyll-action@2.2.0
 #         with:
