@@ -51,14 +51,17 @@
 
 <br/>
 <h3 class="sidebar-title">我的仓库</h3>
-
-{% if Github_info.side_bar_repo_show_list  %}
-    {% assign sorted_repos = side_bar_repo_show_list %}
+<script>var skipedReop = []</script> 
+{% if site.Github_info.side_bar_repo_show_list  %}
+    {% assign sorted_repos = site.Github_info.side_bar_repo_show_list %}
 {% else %}
     {% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse | where: "fork", "false" %}
 {% endif %}
-{% for repo in sorted_repos | limit: site.side_bar_repo_limit %}
-        <div class="card text-center">
+{% assign repo_counter = 0 %}
+{% for repo in sorted_repos %}
+    {% if repo_counter > site.Github_info.side_bar_repo_limit %} {% break %} {% endif %}
+    {% if site.Github_info.side_bar_repo_black_list contains repo.name %} <script>skipedReop.push({{repo | jsonify | normalize_whitespace }})</script>  {% continue %} {% endif %}
+    {% assign repo_counter = repo_counter | plus: 1 %} 
             <div class="thumbnail">
                 <div class="card-image geopattern" data-pattern-id="{{ repo.name }}">
                     <div class="card-image-cell">
@@ -85,9 +88,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-
 {% endfor %}
+        </div>
+<script>console.log("following "+skipedReop.length+" repo is skiped");console.log(skipedReop)</script> 
 <script>
     $(document).ready(function(){
 
