@@ -5,7 +5,7 @@
     <div id="disqus_thread"></div>
     <script>
     var disqus_config = function () {
-        this.page.url = '{{ site.base_url }}{{ page.url }}';
+        this.page.url = '{{ page.url | absolute_url}}';
         this.page.identifier = '{{ page.url }}';
         this.page.title = '{{ page.title }}';
     };
@@ -43,7 +43,7 @@
           <div id="disqus_thread"></div>
           <script>
             var disqus_config = function () {
-              this.page.url = '{{ site.base_url }}{{ page.url }}';
+              this.page.url = '{{ page.url | absolute_url }}';
               this.page.identifier = '{{ page.url }}';
               this.page.title = '{{ page.title }}';
             };
@@ -81,7 +81,7 @@
         </script>
     {% when 'gitalk' %}
         <div id="gitalk-container"></div>
-        <script src="{{ site.base_url }}/assets/js/gitalk.min.js"></script>
+        <script src="{{ '/assets/js/gitalk.min.js' | relative_url }}"></script>
         <script>
         var gitalk = new Gitalk({
             id: '{{ page.url }}',

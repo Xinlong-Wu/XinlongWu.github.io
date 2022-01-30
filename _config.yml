@@ -17,7 +17,7 @@ favicon: favicon.ico
 copyright: XinlongWu
 
 repository: Xinlong-Wu/XinlongWu.github.io
-base_url: https://xinlong-wu.github.io/XinlongWu.github.io/
+url: https://xinlong-wu.github.io/XinlongWu.github.io/
 enforce_ssl: xinlong-wu.github.io/XinlongWu.github.io/
 
 # Sidebar to show popular repo

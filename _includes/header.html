@@ -4,7 +4,7 @@
             <div class="topbar-menu">
                 {% for menu in site.menus %}
                 <div class="item">
-                    <a href="{% if menu.href == '/' %} {{site.base_url}} {% else %} {{site.base_url}}{{ menu.href }} {% endif %}"
+                    <a href="{{ menu.href | relative_url }}"
                        target="{{ menu.target | default: _self }}"
                        title="{{ menu.label }}">
                         {{ menu.label }}
@@ -15,14 +15,14 @@
         </div>
     </div>
     <div class="container">
-        <a id="site-header-brand" href="{{site.base_url}}" title="{{ site.name }}">
+        <a id="site-header-brand" href="{{'' | relative_url}}" title="{{ site.name }}">
             <span class="octicon octicon-smiley"></span>
             {{ site.name }}
         </a>
         <nav class="site-header-nav" role="navigation">
             {% for nav in site.navs %}
             <div class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item hvr-underline-from-center">
-                <a href="{% if nav.href == '/' %} {{site.base_url}} {% else %} {{ nav.href }} {% endif %}"
+                <a href="{% if nav.href == '/' %} {{ '' | relative_url }} {% else %} {{ nav.href | relative_url }} {% endif %}"
                    target="{{ nav.target | default: _self }}"
                    title="{{ nav.label }}">
                     {{ nav.label }}
@@ -30,7 +30,7 @@
                 {% if nav.subnav %}
                 <ul class="submenu">
                     {% for subItem in nav.subnav %}
-                    <li><a href="{% if subItem.subHref == '/' %} {{site.base_url}} {% else %} {{ subItem.subHref }} {% endif %}" 
+                    <li><a href="{% if subItem.subHref == '/' %} {{ '' | relative_url }} {% else %} {{ subItem.subHref | relative_url }} {% endif %}" 
                            target="{{ subItem.target | default: _self }}"
                      >{{ subItem.subLabel }}</a></li>
                     {% endfor %}

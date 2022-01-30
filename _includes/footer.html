@@ -52,16 +52,16 @@
             <a href="javascript:window.scrollTo(0,0)" >TOP</a>
         </div>
         <div class="rss">
-            <a href="{{site.base_url}}{{ site.subscribe_rss }}"><span class="octicon octicon-rss" style="color:orange;"></span></a>
+            <a href="{{ site.subscribe_rss | relative_url }}"><span class="octicon octicon-rss" style="color:orange;"></span></a>
             Power by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a>
         </div>
     </div>
     <!-- Third-Party JS -->
-    <script type="text/javascript" src="{{ site.base_url }}/bower_components/geopattern/js/geopattern.min.js"></script>
+    <script type="text/javascript" src="{{ '/bower_components/geopattern/js/geopattern.min.js' | relative_url }}"></script>
     <!-- My JS -->
-    <script type="text/javascript" src="{{ site.base_url }}/assets/js/script.js"></script>
+    <script type="text/javascript" src="{{ '/assets/js/script.js' | relative_url }}"></script>
     {% for javascript in page.javascript %}
-    <script src="{{ site.base_url }}/assets/js/{{javascript}}"></script>
+    <script src="{{ '/assets/js/' | append: javascript | relative_url }}"></script>
     {% endfor %}
     
      <!-- Cnzz Analytics -->

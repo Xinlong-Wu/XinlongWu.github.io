@@ -36,7 +36,7 @@
         <div class="card-image geopattern" data-pattern-id="{{ article.name }}">
             <div class="card-image-cell">
                 <h3 class="card-title">
-                    <a href="{{ site.base_url }}{{ article.href }}" target="_blank">{{ article.name }}</a>
+                    <a href="{{ article.href | relative_url }}" target="_blank">{{ article.name }}</a>
                 </h3>
             </div>
         </div>

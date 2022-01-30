@@ -11,7 +11,7 @@ css: ['index.css', 'sidebar-popular-repo.css']
                 <span class="meta-info-index hvr-grow">
                     <a  
                     {% if nav.href %} 
-                        href="{% if nav.href == '/' %} {{site.base_url}} {% else %} {{ nav.href }} {% endif %} " 
+                        href="{% if nav.href == '/' %} {{ '' | relative_url }} {% else %} {{ nav.href | relative_url }} {% endif %} " 
                     {% endif %}
                     title="{{ nav.label }}" target="{{ nav.target | default: _self }}">{{ nav.label }}</a>  
                 </span>
@@ -31,7 +31,7 @@ css: ['index.css', 'sidebar-popular-repo.css']
                  {% if  post.category != 'gitchat' and post.category != 'geektime' %}
                     <li class="post-list-item">
                         <h2 class="post-list-title">
-                            <a class="hvr-underline-from-center" href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a>
+                            <a class="hvr-underline-from-center" href="{{ post.url | relative_url }}">{{ post.title }}</a>
                         </h2>
                         <p class="post-list-description">
                             {{ post.excerpt | strip_html | strip }}

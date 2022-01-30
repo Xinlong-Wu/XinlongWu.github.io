@@ -14,31 +14,31 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Third-Party CSS -->
-    <link rel="stylesheet" href="{{ site.base_url }}/bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ site.base_url }}/bower_components/octicons/octicons/octicons.css">
-    <link rel="stylesheet" href="{{ site.base_url }}/bower_components/hover/css/hover-min.css">
-    <link rel="stylesheet" href="{{ site.base_url }}/bower_components/primer-markdown/dist/user-content.min.css">
-    <link rel="stylesheet" href="{{ site.base_url }}/assets/css/syntax.css">
-    <link rel="stylesheet" href="{{ site.base_url }}/assets/css/gitalk.css">
+    <link rel="stylesheet" href="{{ '/bower_components/bootstrap/dist/css/bootstrap.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/bower_components/octicons/octicons/octicons.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/bower_components/hover/css/hover-min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/bower_components/primer-markdown/dist/user-content.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/gitalk.css' | relative_url }}">
 
     
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="{{ site.base_url }}/assets/css/common.css">
+    <link rel="stylesheet" href="{{ '/assets/css/common.css' | relative_url }}">
 
     <!-- CSS set in page -->
     {% for css in page.css %}
-    <link rel="stylesheet" href="{{ site.base_url }}/assets/css/{{css}}">
+    <link rel="stylesheet" href="{{ '/assets/css/' | append: css | relative_url }}">
     {% endfor %}
 
     <!-- CSS set in layout -->
     {% for css in layout.css %}
-    <link rel="stylesheet" href="{{ site.base_url }}/assets/css/{{css}}">
+    <link rel="stylesheet" href="{{ '/assets/css/' | append: css | relative_url }}">
     {% endfor %}
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-    <script type="text/javascript" src="{{ site.base_url }}/bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="{{ site.base_url }}/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="{{ site.base_url }}/assets/js/lock.js"></script>
+    <script type="text/javascript" src="{{ '/bower_components/jquery/dist/jquery.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/bower_components/bootstrap/dist/js/bootstrap.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/lock.js' | relative_url }}"></script>
 </head>
