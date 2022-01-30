@@ -14,6 +14,7 @@ description: Vincent | Lab
 keywords: Vincent,LLVM,Clang,lab,
 encoding: "utf-8"
 favicon: favicon.ico 
+copyright: XinlongWu
 
 repository: Xinlong-Wu/XinlongWu.github.io
 base_url: https://xinlong-wu.github.io/XinlongWu.github.io/
