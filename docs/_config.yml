@@ -96,8 +96,8 @@ menus:
     target: _self
 
   -
-    href: /
-    label: 中文
+    href: /about.html
+    label: about
     target: _self
 
 # Navigation. main menu list
