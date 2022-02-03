@@ -43,8 +43,8 @@ Github_info:
   #     updated_at: 2020/1/1
 
 
-filing_site: http://beian.miit.gov.cn
-filing_info: 京ICP备15067287号
+filing_site: https://beian.miit.gov.cn/#/Integrated/index
+filing_info: 蒙 ICP 备 20003051 号 - 2
 
 ## Gem
 plugins:
@@ -82,18 +82,9 @@ paginate_path: 'page:num'
 menus:
 
   -
-    href: /about.html
-    label: about
-
-  -
     href: /archives.html
     label: archives
     target: _self   
-
-  -
-    href: /arch.html
-    label: arch
-    target: _self
 
   -
     href: /about.html
