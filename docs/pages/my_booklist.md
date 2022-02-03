@@ -42,4 +42,6 @@ permalink: /my_booklist
     *   CSS世界
     *   CSS揭秘
 
+<div>
 {% include comments.html %}
+</div>

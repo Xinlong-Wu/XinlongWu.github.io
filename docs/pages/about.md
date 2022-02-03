@@ -58,4 +58,6 @@ Ingress菜鸡 [Res蓝军](#)
 
 <center><img class="wp-image-72 aligncenter" style="border-radius: 200px;" src="http://cdn.wulongxin.com//usr/uploads/2019/20190705184214.jpg" alt="" width="286" height="286"></center>
 
+<div>
 {% include comments.html %}
+</div>
