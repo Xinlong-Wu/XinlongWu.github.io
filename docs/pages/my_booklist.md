@@ -41,3 +41,5 @@ permalink: /my_booklist
     *   CSS权威指南
     *   CSS世界
     *   CSS揭秘
+
+{% include comments.html %}

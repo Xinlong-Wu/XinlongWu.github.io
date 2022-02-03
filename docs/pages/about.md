@@ -57,3 +57,5 @@ Ingress菜鸡 [Res蓝军](#)
 \# 作品：web期末大作业 | <a href="http://www.wulongxin.com/Res">[Inner Mongolia Resistance](http://www.wulongxin.com/Res)
 
 <center><img class="wp-image-72 aligncenter" style="border-radius: 200px;" src="http://cdn.wulongxin.com//usr/uploads/2019/20190705184214.jpg" alt="" width="286" height="286"></center>
+
+{% include comments.html %}
