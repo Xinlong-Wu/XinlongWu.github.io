@@ -108,8 +108,8 @@ navs:
     label: Home
 
   -
-    href: /
-    label: lable1
+    href: /film_photographic
+    label: film photographic
     target: _blank
 
   -
