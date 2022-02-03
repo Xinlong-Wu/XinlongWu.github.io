@@ -6,6 +6,8 @@ menu: about
 css: ['about.css', 'sidebar-popular-repo.css', '../../bower_components/flag-icon-css/css/flag-icon.min.css']
 permalink: /about
 ---
+
+> 该站是[https://www.wulongxin.com/](https://www.wulongxin.com/)的备份站点
 ## \<p>w\</p>
 ### **FengLinger**
 就读于澳大利亚

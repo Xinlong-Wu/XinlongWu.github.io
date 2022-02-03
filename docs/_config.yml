@@ -152,17 +152,16 @@ navs:
 labels:
 
   -
-    href: /
-    label: Vincnet     
+    label: 该站是     
     target: _self
 
   -
-    label: Templet1
+    href: https://www.wulongxin.com/
+    label: https://www.wulongxin.com/
     target: _blank
 
   -
-    href: /
-    label: 支持中文
+    label: 的备份站点
     target: _blank
 
 
