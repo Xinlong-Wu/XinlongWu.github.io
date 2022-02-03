@@ -113,38 +113,30 @@ navs:
     target: _blank
 
   -
-    href: /
-    label: lable2
+    href: /my_booklist
+    label: booklist
     target: _self
-    subnav:
-
-      -
-        subHref: /
-        subLabel: sub Label1
-
-      -
-        subHref: /
-        subLabel: sub Label2
 
   -
-    href: /
-    label: label3
-    target: _blank
-    subnav:
+    href: /inter_record
+    label: inter record
+    target: _self
 
-      -
-        subHref: /
-        subLabel: sub Label1
+  # -
+  #   href: /
+  #   label: label3
+  #   target: _blank
+  #   subnav:
+
+  #     -
+  #       subHref: /
+  #       subLabel: sub Label1
         
-      -
-        subHref: /
-        subLabel: sub Label2
-        target: _blank
+  #     -
+  #       subHref: /
+  #       subLabel: sub Label2
+  #       target: _blank
 
-  -
-    href: /archives.html
-    label: Archives
-    target: _self
 
 
 
